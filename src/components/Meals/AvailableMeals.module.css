@@ -1,0 +1,39 @@
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  .mealContainer {
+
+    display: flex; /* Display the meal elements in a row */
+    justify-content: space-between; /* Space between the elements */
+    align-items: center; /* Center align items vertically */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.mealActions {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+  
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
